@@ -1,62 +1,96 @@
 # WebPageCapture
 
+Go-Based Solution to capture screenshots or generate PDFs of web pages using headless Chrome.
+
 ## Description
 
-This is a simple tool written in Go that allows users to capture either a screenshot or a PDF of a web page using headless Chrome.
+In the realm of web development and automation, capturing screenshots or generating PDFs of web pages is a common need. Whether for documentation, testing, or monitoring, having a tool that simplifies this process can be invaluable. In this blog post, we introduce a lightweight solution built with Go that leverages headless Chrome for capturing screenshots and generating PDFs.
 
-## Usage
+## Features
 
-### To Capture as a Screenshot:
+- **Capture Screenshots**: Take high-quality screenshots of web pages.
 
-```bash
-go run main.go <URL> image [filename]
+- **Generate PDFs**: Create PDF documents for the web pages.
 
-```
+- **Help and Usage Information**: Access help and usage information using the `-h` or `--help` flag.
 
-#### Example
+- **Custom Output Path and Filename**: Specify the output path and filename for captured screenshots or generated PDFs.
 
-```bash
-go run main.go https://example.com image
-```
+- **URL Validation**: Ensure valid URLs are provided for capturing.
 
-or
+- **Output Type Validation**: Validate and support output types, such as PDF or image.
 
-```bash
-go run main.go https://example.com image output.jpg
-```
+- **File Extension Validation**: Validate output filenames for proper file extensions.
 
-If `filename` is not provided, it will use the default filename `output.jpg`
+## **Getting Started**
 
-### To Generate PDF
+To get started with the Web Page Capture Tool, you can download the pre-built binary from the [GitHub repository](https://github.com/GirishCodeAlchemy/WebPageCapture.git)
 
-```bash
-go run main.go <URL> pdf [filename]
-```
+1. Download the latest binary from the [Releases](https://github.com/GirishCodeAlchemy/WebPageCapture/releases/download/v1.0.0/web-capture-tool)
 
-#### Example
+   ```bash
+   wget https://github.com/GirishCodeAlchemy/WebPageCapture/releases/download/v1.0.0/web-capture-tool
+   ```
 
-```bash
-go run main.go https://example.com pdf
-```
+2. Once downloaded, make the binary executable:
 
-or
+   ```bash
+   chmod +x web-capture-tool
+   ```
 
-```bash
-go run main.go https://example.com pdf output.pdf
-```
+3. Move the binary to a directory in your system's PATH, so you can run it from any location:
 
-If `filename` is not provided, it will use the default filename `output.pdf`.
+   ```bash
+   sudo mv web-capture-tool /usr/local/bin/
+   ```
 
-## Building the Binary
+## **Usage**
 
-To build the binary, use the following commands:
+Certainly! Below is an example of how you can include the help command usage in the README markdown:
 
-```bash
-go build -o web-capture-tool main.go
-```
+markdown
+Copy code
 
-This will generate an executable file named web-capture-tool. You can then run it as follows:
+### **Help and Usage:**
+
+For detailed information about the available flags and options, you can use the following command:
 
 ```bash
-./web-capture-tool <URL> <pdf|image> [filename]
+web-capture-tool -h
 ```
+
+### **Capture Screenshot:**
+
+To capture a screenshot of a web page, run the following command:
+
+```bash
+./web-capture-tool <URL> image [filename]
+```
+
+Example:
+
+```bash
+./web-capture-tool https://example.com image output.jpg
+```
+
+### **Generate PDF:**
+
+To generate a PDF of a web page, use the following command:
+
+```bash
+./web-capture-tool <URL> pdf [filename]
+```
+
+Example:
+
+```bash
+./web-capture-tool https://example.com pdf output.pdf
+```
+
+## **Customization and Extension**
+
+The tool is intentionally kept minimal to serve as a foundation that can be extended based on specific requirements. Users familiar with Go can explore the code and customize the tool to suit their needs. Additionally, integrating it into existing automation pipelines or scripts is straightforward.
+
+## **Conclusion**
+
+The Web Page Capture Tool provides a quick and efficient way to capture web pages in both image and PDF formats. Its simplicity makes it suitable for various use cases, and the underlying Go and Chrome integration offers flexibility and reliability. Whether you need to document web pages, perform visual testing, job hunting, and content documentation, or automate PDF generation, this tool can be a valuable addition to your toolkit.
