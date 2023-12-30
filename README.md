@@ -46,11 +46,6 @@ To get started with the Web Page Capture Tool, you can download the pre-built bi
 
 ## **Usage**
 
-Certainly! Below is an example of how you can include the help command usage in the README markdown:
-
-markdown
-Copy code
-
 ### **Help and Usage:**
 
 For detailed information about the available flags and options, you can use the following command:
@@ -58,6 +53,7 @@ For detailed information about the available flags and options, you can use the 
 ```bash
 web-capture-tool -h
 ```
+<img width="871" alt="image" src="https://github.com/GirishCodeAlchemy/WebPageCapture/assets/143807663/4ecc0356-24e0-4f27-bf1d-2d7d449c97fd">
 
 ### **Capture Screenshot:**
 
