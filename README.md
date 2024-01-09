@@ -1,6 +1,9 @@
 # WebPageCapture
 
-Go-Based Solution to capture screenshots or generate PDFs of web pages using headless Chrome.
+<p align="center">
+  <img src="https://github.com/GirishCodeAlchemy/WebPageCapture/assets/143807663/4bce9a80-a427-4865-9cde-ec4c500b3c45" width="300" alt="Top N Disk Analyzer">  
+</p>
+<h2 align="center">🚀 Go-Based Solution to capture screenshots or generate PDFs of web pages using headless Chrome. 🚀</h2>
 
 ## Description
 
